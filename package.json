@@ -1,0 +1,32 @@
+{
+  "name": "nodeapicours1",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --loader ts-node/esm --no-warnings=ExperimentalWarning index.ts",
+    "dev": "nodemon --watch src --watch index.ts --exec node --loader ts-node/esm --no-warnings=ExperimentalWarning index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Massil-br/NodeApiCours1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Massil-br/NodeApiCours1/issues"
+  },
+  "homepage": "https://github.com/Massil-br/NodeApiCours1#readme",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.6.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
