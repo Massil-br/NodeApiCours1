@@ -10,13 +10,11 @@ export async function GetAllUsers(req :Request,res :Response){
 export async function AddUser(req:Request,res:Response){
     const username = req.body.username
     let userExist = false;
-    users.forEach(element => {
-        if (element == username){
-           userExist = true;
-        }
-    });
+    const user = users.find(u => u === username)
 
-    if(userExist){
+
+
+    if(user){
         return res.status(401).json("Conflict can't create user");
     }
     users.push(username);
